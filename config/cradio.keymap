@@ -35,12 +35,6 @@
     combos {
         compatible = "zmk,combos";
 
-        toggle_gaming_layer {
-            bindings = <&tog 6>;
-            key-positions = <30 33>;
-            layers = <0 6>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
@@ -59,26 +53,117 @@
             layers = <0>;
         };
 
-        sticky_wm_layer_left {
-            bindings = <&sl 8>;
-            key-positions = <21 22>;
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <1 2>;
             layers = <0>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <1 2>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
-        back_slash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <8 9>;
+        wm_layer_or_gui {
+            bindings = <&lt 8 LEFT_GUI>;
+            key-positions = <21 22>;
+            layers = <0>;
         };
 
-        quote {
-            bindings = <&kp SQT>;
+        symbol_1 {
+            bindings = <&mo 1>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        symbols_2 {
+            bindings = <&mo 2>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        numbers_layer {
+            bindings = <&mo 9>;
+            key-positions = <23 22>;
+            layers = <0>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <3 4>;
+            layers = <0>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <14 13>;
+            layers = <0>;
+        };
+
+        left_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <23 24>;
+            layers = <0>;
+        };
+
+        fn_macro_layer {
+            bindings = <&sl 4>;
+            key-positions = <5 6>;
+            layers = <0>;
+        };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        right_alt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <25 26>;
+            layers = <0>;
+        };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <18 17>;
+            layers = <0>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <27 28>;
+            layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <8 9>;
             layers = <0>;
         };
 
@@ -90,121 +175,20 @@
 
         right_shift {
             bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <29 28>;
+            key-positions = <28 29>;
             layers = <0>;
         };
 
-        stick_wm_layer_right {
-            bindings = <&sl 8>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        right_alt {
-            bindings = <&sk RIGHT_ALT>;
-            key-positions = <27 26>;
-            layers = <0>;
-        };
-
-        symbols_1_layer {
-            bindings = <&mo 1>;
-            key-positions = <3 4>;
-            layers = <0>;
-        };
-
-        symbols_2_layer {
-            bindings = <&mo 2>;
-            key-positions = <13 14>;
-            layers = <0>;
-        };
-
-        fn_layer {
-            bindings = <&mo 4>;
-            key-positions = <6 5>;
-            layers = <0>;
-        };
-
-        copy_paste {
-            bindings = <&copy_paste>;
-            key-positions = <15 16>;
-            layers = <0>;
-        };
-
-        tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        left_win_wm_layer {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <21 22>;
-            layers = <8>;
-        };
-
-        right_win_wm_layer {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <28 27>;
-            layers = <8>;
-        };
-
-        numbers_layer {
-            bindings = <&mo 9>;
-            key-positions = <24 23>;
-            layers = <0 3>;
+        toggle_gaming_layer {
+            bindings = <&tog 6>;
+            key-positions = <21 22 23>;
+            layers = <0 6>;
         };
 
         toggle_navigation_layer {
             bindings = <&tog 3>;
-            key-positions = <25 26>;
-            layers = <0>;
-        };
-
-        left_alt {
-            bindings = <&sk LEFT_ALT>;
-            key-positions = <23 22>;
+            key-positions = <26 27 28>;
             layers = <0 3>;
-        };
-
-        double_quotes {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <17 16>;
-            layers = <0>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <17 18>;
-            layers = <0>;
-        };
-
-        middle_click_navigation_layer {
-            bindings = <&mkp MB3>;
-            key-positions = <7 8>;
-            layers = <3>;
-        };
-
-        bootloader_left {
-            bindings = <&bootloader>;
-            key-positions = <31 30>;
-            layers = <0>;
-        };
-
-        bootloader_right {
-            bindings = <&bootloader>;
-            key-positions = <32 33>;
-            layers = <0>;
-        };
-
-        adjustment_layer {
-            bindings = <&mo 5>;
-            key-positions = <31 32>;
         };
     };
 
@@ -213,10 +197,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R    &kp T          &kp Y            &kp U        &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F    &kp G          &kp H            &kp J        &kp K      &kp L    &kp SEMICOLON
-&kp Z  &kp X  &kp C  &kp V    &kp B          &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                     &kp TAB  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER
+&kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y          &kp U        &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F      &kp G        &kp H          &kp J        &kp K      &kp L    &kp SEMICOLON
+&kp Z  &kp X  &kp C  &kp V      &kp B        &kp N          &kp M        &kp COMMA  &kp DOT  &kp FSLH
+                     &lt 5 TAB  &kp SPACE    &kp BACKSPACE  &lt 4 ENTER
             >;
 
             label = "Default Layer";
@@ -225,8 +209,8 @@
         symbols_1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans    &kp COLON       &kp EQUAL        &kp MINUS             &kp UNDER              &kp SINGLE_QUOTE
-&trans  &trans  &trans  &trans  &trans    &kp PLUS        &kp DOT          &kp LESS_THAN         &kp GREATER_THAN       &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans    &kp COLON       &kp EQUAL        &kp MINUS             &kp UNDER              &none
+&trans  &trans  &trans  &trans  &trans    &kp PLUS        &none            &none                 &none                  &none
                         &trans  &trans    &trans          &trans
             >;
 
@@ -235,10 +219,10 @@
 
         symbols_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp EXCL   &kp AT         &kp HASH       &kp PERCENT  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans    &kp LBKT   &kp RBKT       &kp AMPERSAND  &kp STAR     &kp SQT
-&trans  &trans  &trans  &trans  &trans    &kp CARET  &kp LS(POUND)  &kp LS(PRCNT)  &kp DOLLAR   &kp QUESTION
-                        &trans  &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans    &kp EXCL       &kp AT       &kp HASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans  &trans  &trans  &trans    &kp DOLLAR     &kp PERCENT  &kp CARET  &none             &none
+&trans  &trans  &trans  &trans  &trans    &kp AMPERSAND  &kp STAR     &none      &none             &none
+                        &trans  &trans    &trans         &trans
             >;
 
             label = "Symbols Set 2";
@@ -268,10 +252,10 @@
 
         adjustment_layer {
             bindings = <
-&sys_reset      &none  &none         &none         &bt BT_SEL 0    &kp C_VOLUME_UP  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &none
-&bootloader     &none  &none         &bt BT_CLR    &bt BT_SEL 1    &kp C_VOL_DN     &none       &none             &none       &bootloader
-&bt BT_CLR_ALL  &none  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &kp C_MUTE       &none       &none             &none       &sys_reset
-                                     &none         &none           &none            &none
+&sys_reset      &none  &bt BT_CLR_ALL  &none         &bt BT_SEL 0    &kp C_VOLUME_UP  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &sys_reset
+&bootloader     &none  &none           &bt BT_CLR    &bt BT_SEL 1    &kp C_VOL_DN     &none       &none             &none       &bootloader
+&studio_unlock  &none  &bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2    &kp C_MUTE       &none       &none             &none       &studio_unlock
+                                       &none         &none           &none            &none
             >;
 
             label = "Adjust Layer";
@@ -318,12 +302,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        toggle_adjustment_layer {
-            if-layers = <2 3>;
-            then-layer = <5>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
