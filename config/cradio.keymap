@@ -115,7 +115,7 @@
 
         arrows_layer {
             bindings = <&mo 10>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
             layers = <0>;
         };
 
@@ -289,7 +289,7 @@
 
         colon_2 {
             bindings = <&kp COLON>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
             layers = <0>;
         };
     };
@@ -405,10 +405,10 @@
 
         arrows_layer {
             bindings = <
-&kp HOME  &trans          &kp UP_ARROW    &trans           &kp END    &trans  &trans  &trans  &trans  &trans
-&trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans  &trans  &trans  &trans  &trans
-&trans    &trans          &trans          &trans           &trans     &trans  &trans  &trans  &trans  &trans
-                                          &trans           &trans     &trans  &trans
+&kp HOME        &kp UP_ARROW    &none      &none  &kp END    &none  &none  &none  &none  &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none  &none      &none  &none  &none  &none  &none
+&none           &none           &none      &none  &none      &none  &none  &none  &none  &none
+                                           &none  &none      &none  &none
             >;
         };
     };
