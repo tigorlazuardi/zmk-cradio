@@ -254,6 +254,25 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <7 8 9>;
+            layers = <0>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <0 1 2>;
+            layers = <0>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <2 3 4>;
+            layers = <0>;
+        };
+
+        insert {
+            bindings = <&kp INSERT>;
+            key-positions = <2 3 1>;
+            layers = <0>;
         };
     };
 
