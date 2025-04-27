@@ -115,7 +115,7 @@
 
         arrows_layer {
             bindings = <&mo 10>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
@@ -133,7 +133,7 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <16 17>;
+            key-positions = <19 18>;
             layers = <0>;
         };
 
@@ -164,12 +164,6 @@
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <8 9>;
-            layers = <0>;
-        };
-
-        right_ctrl {
-            bindings = <&sk RIGHT_CONTROL>;
-            key-positions = <18 19>;
             layers = <0>;
         };
 
@@ -292,6 +286,12 @@
             key-positions = <6 7 8 9>;
             layers = <0>;
         };
+
+        colon_2 {
+            bindings = <&kp COLON>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -311,8 +311,8 @@
         symbols_1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans    &kp COLON       &kp EQUAL        &kp MINUS             &kp UNDER              &none
-&trans  &trans  &trans  &trans  &trans    &kp PLUS        &none            &none                 &none                  &none
+&trans  &trans  &trans  &trans  &trans    &kp COLON       &kp EQUAL        &kp MINUS             &kp UNDER              &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans  &trans    &kp PLUS        &none            &none                 &none                  &kp DOUBLE_QUOTES
                         &trans  &trans    &trans          &trans
             >;
 
@@ -322,8 +322,8 @@
         symbols_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp EXCL       &kp AT       &kp HASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans    &kp DOLLAR     &kp PERCENT  &kp CARET  &none             &none
-&trans  &trans  &trans  &trans  &trans    &kp AMPERSAND  &kp STAR     &none      &none             &none
+&trans  &trans  &trans  &trans  &trans    &kp DOLLAR     &kp PERCENT  &kp CARET  &none             &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans  &trans    &kp AMPERSAND  &kp STAR     &none      &none             &kp DOUBLE_QUOTES
                         &trans  &trans    &trans         &trans
             >;
 
@@ -332,10 +332,10 @@
 
         navigation_layer {
             bindings = <
-&kp HOME  &none     &kp UP_ARROW    &none            &kp END    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp MB2         &none
-&none     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4
-&none     &none     &none           &none            &none      &none           &none           &none           &none            &mkp MB5
-                                    &none            &none      &none           &none
+&kp HOME  &kp UP_ARROW    &none            &none  &kp END    &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp MB2         &none
+&kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none      &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4
+&none     &none           &none            &none  &none      &msc SCRL_LEFT  &msc SCRL_RIGHT  &none           &none            &mkp MB5
+                                           &none  &none      &mkp MB1        &mkp MB2
             >;
 
             label = "Navigation Layer";
