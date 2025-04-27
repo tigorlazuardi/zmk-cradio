@@ -250,6 +250,11 @@
             key-positions = <1 4>;
             layers = <6>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8 9>;
+        };
     };
 
     keymap {
