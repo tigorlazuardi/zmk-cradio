@@ -11,27 +11,6 @@
 &msc { time-to-max-speed-ms = <0>; };
 
 / {
-    behaviors {
-        ht: ht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Hold Tap";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            flavor = "tap-preferred";
-        };
-
-        copy_paste: copy_paste {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COPY_PASTE";
-            #binding-cells = <0>;
-            bindings = <&kp LC(C)>, <&kp LC(V)>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -66,7 +45,7 @@
         };
 
         wm_layer_or_gui {
-            bindings = <&lt 8 LEFT_GUI>;
+            bindings = <&sl 8>;
             key-positions = <21 22>;
             layers = <0>;
         };
@@ -302,6 +281,12 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <25 26>;
             layers = <0>;
+        };
+
+        gui_on_wm_layer {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <21 22>;
+            layers = <8>;
         };
     };
 
