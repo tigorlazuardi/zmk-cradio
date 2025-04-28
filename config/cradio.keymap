@@ -23,13 +23,13 @@
         left_ctrl {
             bindings = <&sk LEFT_CONTROL>;
             key-positions = <10 11>;
-            layers = <0>;
+            layers = <0 8>;
         };
 
         left_shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <20 21>;
-            layers = <0>;
+            layers = <0 8>;
         };
 
         tilde {
@@ -383,10 +383,10 @@
 
         wm_layer {
             bindings = <
-&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)   &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(P)
-&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp G        &kp LG(N0)  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp LG(SEMI)
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)   &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(FSLH)
-                                 &trans     &trans       &trans      &trans
+&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)          &kp LG(N7)     &kp LG(N8)  &kp LG(N9)  &kp LG(P)
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp G        &kp LG(N0)         &kp LG(N4)     &kp LG(N5)  &kp LG(N6)  &kp LG(SEMI)
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)          &kp LG(N1)     &kp LG(N2)  &kp LG(N3)  &kp LG(FSLH)
+                                 &none      &none        &kp LG(BACKSPACE)  &kp LG(ENTER)
             >;
         };
 
